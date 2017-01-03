@@ -1,0 +1,23 @@
+{
+  "license": "MIT",
+  "name": "generator-angular-component-seed",
+  "version": "0.1.0",
+  "description": "Angular 2 seed component generator",
+  "repository": {
+    "type": "git",
+    "url": "https://<user>@bitbucket.org/<repo-owner>/stn-angular-component-seed-generator.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "yeoman",
+    "angular"
+  ],
+  "main": "generators/app/index.js",
+  "files": [
+    "generators"
+  ],
+  "dependencies": {
+    "globby": "^6.1.0",
+    "yeoman-generator": "^1.0.1"
+  }
+}
