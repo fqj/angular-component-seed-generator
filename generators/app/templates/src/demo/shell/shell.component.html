@@ -3,10 +3,12 @@
 </header>
 <section class="main">
   <aside class="main__sidebar">
+    <img class="main__logo" src="/assets/images/frontstack.png">
     <h1>{{ componentName }}</h1>
     <nav class="main__nav">
-      <a [routerLink]="['/demo']" class="main__link">Demo</a>
-      <a [routerLink]="['/docs']" class="main__link">Docs</a>
+      <a [routerLink]="['/demo']" class="main__link"><i class="fa fa-play-circle"></i>Demo</a>
+      <a [routerLink]="['/docs']" class="main__link"><i class="fa fa-file"></i>Docs</a>
+      <a [routerLink]="['/reports']" class="main__link"><i class="fa fa-file"></i>Tests Reporting</a>
     </nav>
   </aside>
   <section class="main__iframe" >

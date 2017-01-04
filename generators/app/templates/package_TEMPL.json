@@ -13,7 +13,7 @@
     "protractor": "protractor config/protractor.conf.js",
     "test": "karma start config/karma.conf.js",
     "tslint": "tslint",
-    "docs": "npm run typedoc -- --options config/typedoc.json --exclude '**/*.spec.ts' ./component/",
+    "docs": "npm run typedoc -- --options config/typedoc.json --exclude '**/*.spec.ts' ./src/components/",
     "typedoc": "typedoc",
     "clean:aot": "npm run rimraf -- dist",
     "clean:dist": "npm run rimraf -- dist && npm run rimraf -- dist-aot",

@@ -1,13 +1,18 @@
 .demo-snippet {
   margin: 10px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 1px solid #d6d6d6;
 }
 
-.demo-snippet__transclusion {
+.demo-snippet__content {
+  padding: 10px;
+}
+
+pre.demo-snippet__transclusion {
+  margin: 0;
+  background: #faf3ff;
   padding: 10px;
   border-top: 1px solid #d6d6d6;
 }

@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation, Renderer} from '@angular/core';
+import { Component, ViewEncapsulation, Renderer } from '@angular/core';
 
 /*
  * App Component
