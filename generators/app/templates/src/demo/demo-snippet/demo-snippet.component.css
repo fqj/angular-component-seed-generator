@@ -15,4 +15,5 @@ pre.demo-snippet__transclusion {
   background: #faf3ff;
   padding: 10px;
   border-top: 1px solid #d6d6d6;
+  overflow: scroll;
 }

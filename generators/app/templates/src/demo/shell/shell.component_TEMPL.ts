@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, Renderer } from '@angular/core';
+import {Component, ViewEncapsulation, Renderer} from '@angular/core';
 
 /*
  * App Component
@@ -13,14 +13,19 @@ import { Component, ViewEncapsulation, Renderer } from '@angular/core';
 
 export class ShellComponent {
 
-    private page: String;
-    private componentName: String;
+    private page:string;
+    private componentName:string;
+    menu:boolean;
 
     constructor(private renderer: Renderer){}
 
     ngOnInit() {
       this.componentName = '<%- componentClassName %>';
       this.page = 'demo';
+    }
+
+    toggleMenu() {
+      this.menu = !this.menu;
     }
 
   }
