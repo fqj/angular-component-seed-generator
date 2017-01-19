@@ -9,7 +9,7 @@ import { <%- componentClassName %> } from "./<%- componentName %>.component";
 describe('<%- componentName %> test suite', () => {
 
   let fixture: ComponentFixture<StnHeaderComponent>;
-  let my<%- componentClassName %>: <%- componentClassName %>; 
+  let inst<%- componentClassName %>: <%- componentClassName %>; 
 
   // provide our implementations or mock-data to the dependency injector
   beforeEach(() => {
@@ -18,20 +18,20 @@ describe('<%- componentName %> test suite', () => {
       declarations: [
         <%- componentClassName %>
       ]
-    });
+    }).compileComponents();
 
     fixture = TestBed.createComponent(<%- componentClassName %>);
-    my<%- componentClassName %> = fixture.componentInstance;
+    inst<%- componentClassName %> = fixture.componentInstance;
 
   });
 
   it('Concatenate name property', inject([], () => {
     let valueExpected: string = 'My new component';
 
-    my<%- componentClassName %>.name = 'component';
+    inst<%- componentClassName %>.name = 'component';
 
     fixture.detectChanges();
-    expect(my<%- componentClassName %>.getConcatenatedName()).toBe(valueExpected);
+    expect(inst<%- componentClassName %>.getConcatenatedName()).toBe(valueExpected);
 
   }));
 
