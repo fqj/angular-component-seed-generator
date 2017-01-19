@@ -8,17 +8,30 @@ import { <%- componentClassName %> } from "./<%- componentName %>.component";
 
 describe('<%- componentName %> test suite', () => {
 
+  let fixture: ComponentFixture<StnHeaderComponent>;
+  let my<%- componentClassName %>: <%- componentClassName %>; 
+
   // provide our implementations or mock-data to the dependency injector
-  beforeEach(() => TestBed.configureTestingModule(
+  beforeEach(() => {
+    TestBed.configureTestingModule(
     {
-      providers: [<%- componentClassName %>]
-    }
-  ));
+      declarations: [
+        <%- componentClassName %>
+      ]
+    });
 
-  it('Concatenate name property', inject([ <%- componentClassName %> ], (myEl: <%- componentClassName %>) => {
+    fixture = TestBed.createComponent(<%- componentClassName %>);
+    my<%- componentClassName %> = fixture.componentInstance;
 
-    myEl.name = 'Julio Iglesias';
-    expect(myEl.getConcatenatedName()).toBe('My name is Julio Iglesias and you know it!');
+  });
+
+  it('Concatenate name property', inject([], () => {
+    let valueExpected: string = 'My new component';
+
+    my<%- componentClassName %>.name = 'component';
+
+    fixture.detectChanges();
+    expect(my<%- componentClassName %>.getConcatenatedName()).toBe(valueExpected);
 
   }));
 
